@@ -10283,7 +10283,7 @@ fieldset:disabled .btn {
 }
 
 .bg-info {
-    background-color: #17c1e8 !important;
+    background-color: #96cbf8 !important;
 }
 
 .bg-warning {
@@ -19793,7 +19793,7 @@ fieldset:disabled .btn {
 
 */
 .alert-primary {
-    background-image: linear-gradient(310deg, #7928CA 0%, #d6006c 100%);
+    background-image: linear-gradient(310deg, #6a0af4 0%, #d6006c 100%);
 }
 
 .alert-secondary {
@@ -20081,13 +20081,13 @@ fieldset:disabled .btn {
 
 .btn-primary:hover,
 .btn.bg-gradient-primary:hover {
-    background-color: #cb0c9f;
-    border-color: #cb0c9f;
+    background-color: #D7A9E3FF;
+    border-color: #D7A9E3FF;
 }
 
 .btn-primary .btn.bg-outline-primary,
 .btn.bg-gradient-primary .btn.bg-outline-primary {
-    border: 1px solid #cb0c9f;
+    border: 1px solid #D7A9E3FF;
 }
 
 .btn-primary:not(:disabled):not(.disabled).active,
@@ -20096,8 +20096,8 @@ fieldset:disabled .btn {
 .btn.bg-gradient-primary:not(:disabled):not(.disabled).active,
 .btn.bg-gradient-primary:not(:disabled):not(.disabled):active,
 .show>.btn.bg-gradient-primary.dropdown-toggle {
-    color: color-yiq(#cb0c9f);
-    background-color: #cb0c9f;
+    color: color-yiq(#D7A9E3FF);
+    background-color: #D7A9E3FF;
 }
 
 .btn-primary.focus,
@@ -20638,7 +20638,7 @@ fieldset:disabled .btn {
 }
 
 .card.card-background.card-background-mask-primary:after {
-    background-image: linear-gradient(310deg, #7928CA 0%, #FF0080 100%);
+    background-image: linear-gradient(310deg, #6a0af4 0%, #FF0080 100%);
     opacity: .85;
 }
 
@@ -21138,8 +21138,8 @@ fieldset:disabled .btn {
 .fixed-plugin .btn.bg-gradient-primary:not(:disabled):not(.disabled):not(.active) {
     background-color: transparent;
     background-image: none;
-    border: 1px solid #cb0c9f;
-    color: #cb0c9f;
+    border: 1px solid #D7A9E3FF;
+    color: #D7A9E3FF;
 }
 
 .fixed-plugin.show .card {
@@ -21352,7 +21352,7 @@ label,
 }
 
 .bg-gradient-primary {
-    background-image: linear-gradient(310deg, #7928CA 0%, #FF0080 100%);
+    background-image: linear-gradient(310deg, #6a0af4 0%, #D7A9E3FF 100%);
 }
 
 .bg-gradient-secondary {
@@ -21578,7 +21578,7 @@ label,
 }
 
 svg.text-primary .color-foreground {
-    fill: #7928CA;
+    fill: #6a0af4;
 }
 
 svg.text-primary .color-background {
@@ -21700,7 +21700,7 @@ svg.text-dark .color-background {
 }
 
 *.gradient-animation {
-    background: linear-gradient(-45deg, #2152ff, #ea0606, #fbcf33, #7928CA, #344767);
+    background: linear-gradient(-45deg, #2152ff, #ea0606, #fbcf33, #6a0af4, #344767);
     background-size: 400% 400% !important;
     animation: gradient 10s ease infinite;
 }
@@ -23251,8 +23251,8 @@ hr.horizontal.gray-light {
 }
 
 .nav.nav-pills.nav-pills-primary .moving-tab .nav-link.active {
-    background: #7928CA;
-    color: #7928CA;
+    background: #6a0af4;
+    color: #6a0af4;
 }
 
 .nav.nav-pills.nav-pills-info {
@@ -23386,7 +23386,7 @@ hr.horizontal.gray-light {
 .pagination.pagination-primary .page-item.active>.page-link,
 .pagination.pagination-primary .page-item.active>.page-link:focus,
 .pagination.pagination-primary .page-item.active>.page-link:hover {
-    background-image: linear-gradient(310deg, #7928CA 0%, #FF0080 100%);
+    background-image: linear-gradient(310deg, #6a0af4 0%, #FF0080 100%);
     border: none;
 }
 
@@ -24568,7 +24568,7 @@ p {
 }
 
 .text-gradient.text-primary {
-    background-image: linear-gradient(310deg, #7928CA, #FF0080);
+    background-image: linear-gradient(310deg, #6a0af4, #FF0080);
 }
 
 .text-gradient.text-info {
@@ -25808,7 +25808,7 @@ span.flatpickr-weekday {
 }
 
 .noUi-connect {
-    background-image: linear-gradient(310deg, #7928CA 0%, #FF0080 100%);
+    background-image: linear-gradient(310deg, #6a0af4 0%, #FF0080 100%);
 }
 
 /* Handles and cursors;

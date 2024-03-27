@@ -38,7 +38,7 @@
     </div>
 </div>
 
-<nav class="navbar fixed-top px-0 shadow-sm bg-white">
+<nav class="navbar fixed-top px-0 shadow-sm bg-info">
     <div class="container-fluid">
 
         <a class="navbar-brand" href="{{url("/dashboard")}}">

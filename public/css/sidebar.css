@@ -37,7 +37,7 @@
     left: 0;
     overflow-x: hidden;
     transition: 0.3s;
-    background-color: #ffffff;
+    background-color: #e4fcee;
     border-right: 1px solid rgba(0,0,0,.075);
     scrollbar-color: #CCCCCC #F5F5F5;
     scrollbar-width: thin;
@@ -112,9 +112,9 @@
     width: 100% !important;
 }
 .side-bar-item:hover{
-    border-left: 4px solid #CB0C9F;
+    border-left: 4px solid #0acffc;
     transition: 0.2s;
-    background-color: #F3D9EC;
+    background-color: #b0edff;
 }
 .side-bar-item:hover .side-bar-item-icon {
     color: #363B64;

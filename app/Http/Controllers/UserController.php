@@ -14,7 +14,7 @@ use Illuminate\View\View;
 
 class UserController extends Controller
 {
-    
+
     function LoginPage():View{
         return view('pages.auth.login-page');
     }
@@ -54,7 +54,7 @@ class UserController extends Controller
                 "email" => $request->input("email"),
                 "mobile" => $request->input("mobile")
             ]);
-    
+
             return response()->json([
                 "status" => "success",
                 "message" => "User Registration Successfully"
@@ -65,7 +65,7 @@ class UserController extends Controller
                 "message" => $e->getMessage()
             ], 200);
         }
-        
+
     }
 
     public function userLogein(Request $request){
@@ -73,24 +73,24 @@ class UserController extends Controller
             'email' => 'required|string|email|max:50',
             'password' => 'required|string|min:6',
         ]);
-        
+
         $user = User::where('email', $request->input('email'))->first();
-        
+
         if ($user && Hash::check($request->input('password'), $user->password)) {
-            
+
             $token = JWTtoken::createTokaen($request->input('email'), $user->id);
             return response()->json([
                 'status' => 'success',
                 'message' => 'User Login Successful',
             ], 200)->cookie('token', $token, time() + 60 * 24 * 30);
         } else {
-            
+
             return response()->json([
                 'status' => 'failed',
                 'message' => 'Unauthorized',
             ]);
         }
-        
+
     }
 
     public function OTPSand(Request $request){
@@ -101,7 +101,7 @@ class UserController extends Controller
             $email = $request->input("email");
             $otp = rand(1000,9999);
             $count = User::where("email", "=", $email)->count();
-    
+
             if($count==1){
                 Mail::to($email)->send(new OtpSand($otp));
                 User::where("email","=",$email)->update(["otp"=>$otp]);
@@ -110,7 +110,7 @@ class UserController extends Controller
                     "message" => "4 Digit OTP Code has been send to your email !"
                 ],200);
             }
-    
+
             else{
                 return response()->json([
                     "status" => "failed",
@@ -120,7 +120,7 @@ class UserController extends Controller
         }catch (Exception $e){
             return response()->json(['status' => 'failed', 'message' => $e->getMessage()]);
         }
-        
+
     }
 
     public function VerifyOTP(Request $request){
@@ -164,19 +164,19 @@ class UserController extends Controller
             ], 200);
         }
         catch(Exception $e){
-            
+
             return response()->json([
                 "status" => "failed",
                 "message" => $e->getMessage(),
             ],200);
         }
-        
+
     }
 
     public function logOut(){
-        return redirect("/userLogin")->cookie("token"," ",-1);
+        return redirect("/")->cookie("token"," ",-1);
     }
-    
+
     public function UserProfile(Request $request){
         $email = $request->header("email");
         $user = User::where("email", "=", $email)->first();
